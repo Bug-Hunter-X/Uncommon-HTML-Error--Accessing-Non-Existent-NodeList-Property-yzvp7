@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const divs = document.querySelectorAll('div');
+    // Iterate through the NodeList to access properties of individual nodes
+    divs.forEach(div => {
+      console.log(div.id); // Accessing a valid property of the div element
+    });
+  </script>
+</body>
+</html>
